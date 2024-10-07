@@ -163,40 +163,33 @@ main {
       }
   }
 }
-
-.results {
+/* Card results */
+.CardResult{
   width: 100%;
-  height: 30rem;
+  height: auto;
+  margin: 8rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #10181d;
-  padding: 1rem;
-  color: white;
-
-  .results-title{
-      margin: 1.5rem;
-  }
-
-  .results-container {
-      width: 100%;
-      height: auto;
-      display: grid;
-      grid-template-columns: repeat(5, auto);
-      gap: 1rem;
-      padding: 3rem 1rem;
-      background-color: black;
-      border-radius: 1.5rem;
-      font-size: 1.5rem;
-      place-items: center;
-      box-shadow: 1px 1px 5px 5px rgba(157, 157, 157, 0.3);
-  }
-
-  .titles {
-      font-weight: 300;
-  }
+  border: 1px solid white;
+  box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.3);
+  border-radius: 1.5rem;
+  padding: 3rem;
 }
+.inactive{
+  display: none;
+}
+
+
+/* INFORMATION */
 .information{
   width: 100%;
   height: auto;
@@ -214,7 +207,19 @@ main {
   font-weight: 300;
   text-align: center;
 }
-
+.containerIMC-img{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  padding: 2rem;
+}
+.imgIMC{
+  width: 100%;
+  height: auto;
+}
 /* FOOTER */
 footer {
   width: 100%;

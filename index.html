@@ -3,10 +3,11 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/public/Logotipo_terminado.png" />
+  <link rel="icon" type="image/svg+xml" href="/Logotipo_terminado.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <title>IMC Calculator</title>
 </head>
 
@@ -37,38 +38,15 @@
     <section class="formulario" id="forms">
       <div class="forms-container">
         <h1 class="forms-title">FORMS</h1>
-        <p>Please enter all your information to know about your Macros and Calories</p>
+        <p>Please enter all your information to know about your IMC</p>
         <form id="myForms" class="forms">
           <div>
             <label for="Weight">Weight</label>
-            <input type="number" id="Weight" name="Weight" placeholder="Weight in Kg">
+            <input type="number" id="Weight" name="Weight" placeholder="Weight in Kg" required>
           </div>
           <div>
             <label for="Height">Height</label>
-            <input type="number" id="Height" name="Height" placeholder="Height in centimeters">
-          </div>
-          <div>
-            <label for="Age">Age</label>
-            <input type="number" id="Age" name="Age" placeholder="Age">
-          </div>
-          <div>
-            <label for="Gender">Gender</label>
-            <br>
-            <select name="Gender" id="Gender">
-              <option value="Man">Man</option>
-              <option value="Woman">Woman</option>
-            </select>
-          </div>
-          <div>
-            <label for="Activity">Activity</label>
-            <br>
-            <select name="Activity" id="Activity" form="myForms">
-              <option value="1.2">Sedentary</option>
-              <option value="1.375">Lightly active</option>
-              <option value="1.55">Moderately active</option>
-              <option value="1.725">Very active</option>
-              <option value="1.9">Extra active</option>
-            </select>
+            <input type="number" id="Height" name="Height" placeholder="Height in centimeters" required>
           </div>
           <div>
             <div>
@@ -81,76 +59,57 @@
         </form>
       </div>
     </section>
-    <section class="results" id="result">
-      <h1 class="results-title">RESULTS</h1>
-      <div class="results-container">
-        <div class="titles">GOALS</div>
-        <div class="titles">Calories</div>
-        <div class="titles">Protein</div>
-        <div class="titles">Fat</div>
-        <div class="titles">Carbohydrates</div>
-        <div class="titles">Deficit</div>
-        <div>
-          <p id="deficit">-</p>
-        </div>
-        <div>
-          <p id="proteinD">-</p>
-        </div>
-        <div>
-          <p id="fatD">-</p>
-        </div>
-        <div>
-          <p id="carbsD">-</p>
-        </div>
-        <div class="titles">Surplus</div>
-        <div>
-          <p id="surplus">-</p>
-        </div>
-        <div>
-          <p id="proteinS">-</p>
-        </div>
-        <div>
-          <p id="fatS">-</p>
-        </div>
-        <div>
-          <p id="carbsS">-</p>
-        </div>
-        <div class="titles">Maintain</div>
-        <div>
-          <p id="maintain">-</p>
-        </div>
-        <div>
-          <p id="proteinM">-</p>
-        </div>
-        <div>
-          <p id="fatM">-</p>
-        </div>
-        <div>
-          <p id="carbsM">-</p>
+    <article class="CardResult inactive">
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="/Logotipo_BlancoNegro.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text1"></p>
+              <b class="card-text2"></b>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </article>
     <article class="information" id="info">
       <div class="information-container">
-        <h1 class="information-title">INFORMATION</h1>
-        <p class="information-p">Body Calculator is a tool that helps you to know your daily calorie intake,
-          macronutrients and the
-          amount of calories you need to consume to reach your goals. It is important to know that the results
-          are approximate and may vary depending on the person's metabolism.
-        </p>
-        <p class="information-p">Using Body Calculator, you can also track your progress over time and adjust
-          your
-          diet and exercise routine accordingly. Remember to consult with a healthcare professional before
-          making
-          any significant changes to your diet or exercise regimen.
-        </p>
-        <p class="information-p">The tool takes into account various factors such as age, gender, weight,
-          height, and
-          activity level to provide personalized recommendations. By understanding your body's needs, you can
-          make
-          more informed decisions about your health and fitness journey.
-        </p>
+        <h1>¿Qué es el IMC?</h2>
+        <p>El Índice de Masa Corporal (IMC) es una fórmula utilizada para estimar la cantidad de grasa corporal de una
+          persona en relación con su peso y altura. Se utiliza como una herramienta sencilla para clasificar a las
+          personas en categorías como bajo peso, peso normal, sobrepeso y obesidad, lo que puede ayudar a identificar
+          riesgos de salud asociados con el exceso o la falta de peso.</p>
+
+        <h1>¿Cómo interpretar tu IMC?</h2>
+        <ul>
+          <li><strong>Bajo peso (IMC menor a 18.5):</strong> Puede indicar insuficiencia de peso, lo cual podría conllevar a
+                problemas de salud como desnutrición.</li>
+          <li><strong>Peso normal (IMC 18.5 - 24.9):</strong> Indica que estás en un rango saludable de peso en relación
+            a tu altura.</li>
+          <li><strong>Sobrepeso (IMC 25 - 29.9):</strong> Sugiere que tienes más peso del recomendable, lo que podría
+            aumentar el riesgo de enfermedades cardiovasculares.</li>
+          <li><strong>Obesidad (IMC ≥ 30):</strong> Indica un alto nivel de grasa corporal, lo cual está asociado a un
+            mayor riesgo de problemas de salud graves.</li>
+        </ul>
+
+        <h1>Limitaciones del IMC</h2>
+        <p>Aunque el IMC es una herramienta útil, no tiene en cuenta factores como la distribución de la grasa corporal,
+          la masa muscular, la edad o el sexo. Por lo tanto, personas muy musculosas pueden tener un IMC alto sin tener
+          exceso de grasa. Siempre es recomendable consultar a un profesional de la salud para una evaluación más
+          precisa.</p>
+
+        <h1>Cómo usar esta calculadora</h2>
+        <p>Para obtener tu IMC, simplemente ingresa tu peso en kilogramos y tu altura en centímetros, luego presiona el
+          botón "Calcular IMC". La calculadora te mostrará tu resultado y la categoría en la que te encuentras. Recuerda
+          que esta herramienta es solo una referencia; consulta a un médico o especialista en nutrición para una
+          evaluación completa.</p>
       </div>
+    </article>
+    <article class="containerIMC-img">
+      <img src="./assets/IMC.png" alt="IMC" class="imgIMC">
     </article>
   </main>
   <footer id="footer">
