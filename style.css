@@ -27,6 +27,7 @@ nav {
   align-items: center;
   background-color:rgba(128, 128, 128);
   position: fixed;
+  z-index: 1;
 }
 .containerNav {
   display: flex;
@@ -167,22 +168,33 @@ main {
 .CardResult{
   width: 100%;
   height: auto;
-  margin: 8rem 0;
+  margin: 3rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3rem;
 }
 .card{
   width: 100%;
   height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   border: 1px solid white;
   box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.3);
   border-radius: 1.5rem;
   padding: 3rem;
+}
+.card-title{
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.card-text1{
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.card-text2{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 .inactive{
   display: none;
@@ -193,8 +205,9 @@ main {
 .information{
   width: 100%;
   height: auto;
-  padding: 2rem;
+  padding: 4rem;
   color: white;
+
 }
 .information-title{
   font-size: 2rem;
