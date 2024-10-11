@@ -27,6 +27,11 @@ function DATA(event) {
     const recommendations = document.querySelector('.card-text2');
     const img = document.querySelector('.img-fluid');
 
+    if (weight < 0 || height < 0) {
+        alert("El peso y la altura no pueden ser negativos.");
+        return;
+    }
+
     const CALC = weight / (height / 100) ** 2;
 
     CardResult.classList.toggle('inactive');
@@ -36,6 +41,8 @@ function DATA(event) {
         description.innerText = "Peso insuficiente para la altura, posible riesgo de desnutrición";
         recommendations.innerText = "Aumentar calorías con alimentos nutritivos y hacer ejercicios de fuerza.";
         img.src = "https://media.istockphoto.com"
+        console.log(CALC);
+        
     }
     else if(CALC >= 18.5 && CALC <= 24.9){
 
